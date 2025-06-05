@@ -1,0 +1,64 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .Header-Outer-container {
+    width: 100%;
+    background-color: #141414; /* Netflix dark background */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .Header-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .Header-left ul,
+  .Header-right ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .Header-left ul li,
+  .Header-right ul li {
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  .Header-left ul li:hover,
+  .Header-right ul li:hover {
+    color: #e50914; /* Netflix red on hover */
+  }
+  
+  .Header-left img {
+    width: 100px;
+    object-fit: contain;
+  }
+  
+  .Header-right svg {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .Header-right svg:hover {
+    color: #e50914;
+  }
+  /* General reset and base styles */
+

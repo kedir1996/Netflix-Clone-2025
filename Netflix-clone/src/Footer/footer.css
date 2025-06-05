@@ -1,0 +1,99 @@
+.footer_outer_container {
+  background-color: #111;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.footer_inner_container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Social Icons */
+.footer_icons {
+  padding-top: 20px;
+  display: flex;
+  gap: 1rem;
+  
+}
+
+/* Grid of footer links */
+.footer_data {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer_data ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer_data ul li {
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer_data ul li:hover {
+  color: #e50914;
+}
+
+/* Service Code Button */
+.Service-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  width: fit-content;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Service-code:hover {
+  background-color: #e50914;
+  border-color: #e50914;
+  color: white;
+}
+
+/* Copyright Section */
+.Copyright {
+  font-size: 0.8rem;
+  color: #999;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer_inner_container {
+    width: 90%;
+  }
+
+  .footer_data {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_data ul {
+    align-items: center;
+  }
+
+  .footer_icons {
+    justify-content: center;
+  }
+}
